@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-@!p+6vjwmqb$_7_m^d=cu)l*b13pp(!bf_cmc&jm75uv(kd(#8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+#CSRF 트러스트 도메인 추가
+CSRF_TRUESTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:8000'
+]
+
 
 
 # Application definition
