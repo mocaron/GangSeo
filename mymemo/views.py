@@ -10,5 +10,5 @@ def index(request):
 
 
 def create(request):
-    content = request.GET['memoContent']
+    content = request.POST['memoContent']
     return HttpResponse("메모작성 내용 = "+content)
