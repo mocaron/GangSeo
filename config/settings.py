@@ -32,7 +32,13 @@ CSRF_TRUESTED_ORIGINS = [
     'http://127.0.0.1:8000'
 ]
 
+CSRF_COOKIE_SECURE = [  'http://localhost:8000',
+    'http://127.0.0.1:8000'
+]
 
+SESSION_COOKIE_SECURE = [  'http://localhost:8000',
+    'http://127.0.0.1:8000'
+]
 
 # Application definition
 
