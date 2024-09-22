@@ -8,7 +8,7 @@ def index(request):
     #return render(request, 'main.html')
     lists = Memo.obejcts.all()
     data = {'lists': lists}
-    return render(request 'main.html', data)
+    return render(request, 'main.html', data)
     
 
 
