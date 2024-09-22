@@ -6,7 +6,7 @@ from .models import *
 def index(request):
     #return HttpResponse("강서공고 안녕")
     #return render(request, 'main.html')
-    lists = Memo.obejcts.all()
+    lists = Memo.objects.all()
     data = {'lists': lists}
     return render(request, 'main.html', data)
     
