@@ -20,3 +20,10 @@ def create(request):
     usermemo.save()
     return HttpResponseRedirect(reverse('index'))
 
+
+def updateMemo(request):
+    idx = request.POST['idx']
+    memoContent = request.POST['memoContent']
+    #return HttpResponse(f'현재 넘어온 값들은 idx는 { idx }번이고 , memo내용은 { memoContent } 입니다.')
+
+    #실질적인 DB 수정 처리
