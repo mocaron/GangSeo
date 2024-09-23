@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>메모 작성 페이지</title>
+    </head>
+    <body>
+        <h1> 메모 작성 폼</h1>
+        <form action="./update/" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="idx" value="{{article.id}}">
+            <label for="memo">한 줄 메모 수정</label>
+            <input type="text" id="memo" name="memoContent" value="{{article.text}}" size="100" autocomplete="off">
+        <button type="submit"> 수정하기 </button>
+        </form>
+    </body>
+</html>
